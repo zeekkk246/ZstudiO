@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Z Studio — Next Gen Digital Agency</title>
   <meta name="description" content="Visual identity and digital experiences for the bold.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=1.1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -56,7 +56,7 @@
     <nav class="nav">
       <a href="#services">Work</a>
       <a href="#pricing">Pricing</a>
-      <a href="#contact">Start Project</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="hamburger"><i class="fas fa-bars"></i></div>
   </header>
@@ -78,35 +78,33 @@
   <div class="marquee-wrapper">
     <div class="marquee-content">
       <span class="marquee-item">Web Development</span>
+      <span class="marquee-item" style="color: transparent; -webkit-text-stroke: 1px #fff;">Networking</span>
       <span class="marquee-item">Video Editing</span>
-      <span class="marquee-item">Branding</span>
+      <span class="marquee-item" style="color: transparent; -webkit-text-stroke: 1px #fff;">Branding</span>
       <span class="marquee-item">UI/UX Design</span>
+      <span class="marquee-item" style="color: transparent; -webkit-text-stroke: 1px #fff;">Cisco Config</span>
       <span class="marquee-item">Motion Graphics</span>
-      <span class="marquee-item">Strategy</span>
+      <span class="marquee-item" style="color: transparent; -webkit-text-stroke: 1px #fff;">Strategy</span>
       <span class="marquee-item">Web Development</span>
+      <span class="marquee-item" style="color: transparent; -webkit-text-stroke: 1px #fff;">Networking</span>
       <span class="marquee-item">Video Editing</span>
-      <span class="marquee-item">Branding</span>
+      <span class="marquee-item" style="color: transparent; -webkit-text-stroke: 1px #fff;">Branding</span>
     </div>
   </div>
 
-  <!-- SERVICES BENTO GRID - EXPANDED & REFINED -->
+  <!-- SERVICES BENTO GRID -->
   <section id="services" class="section">
     <div class="container">
       <h2 class="section-title">Our <span>Arsenal</span></h2>
-
       <div class="bento-grid">
-        <!-- Row 1: Web Dev (Large), Branding -->
         <div class="bento-item bento-large">
-          <div style="margin-bottom: 20px;">
-            <i class="fas fa-laptop-code"></i>
-          </div>
+          <div style="margin-bottom: 20px;"><i class="fas fa-laptop-code"></i></div>
           <div>
             <h3>Web Development</h3>
             <p>High-performant, SEO-ready websites built on Next.js. We don't just clear templates; we code experiences.
             </p>
           </div>
         </div>
-
         <div class="bento-item">
           <div style="margin-bottom: 20px;"><i class="fas fa-bezier-curve"></i></div>
           <div>
@@ -114,8 +112,13 @@
             <p>Visual identities that stick.</p>
           </div>
         </div>
-
-        <!-- Row 2: UI/UX, Video (Tall), Mobile Apps -->
+        <div class="bento-item">
+          <div style="margin-bottom: 20px;"><i class="fas fa-network-wired"></i></div>
+          <div>
+            <h3>Networking</h3>
+            <p>Cisco packet tracer, routing, switching, & complex topology configs.</p>
+          </div>
+        </div>
         <div class="bento-item">
           <div style="margin-bottom: 20px;"><i class="fas fa-pen-nib"></i></div>
           <div>
@@ -123,13 +126,11 @@
             <p>Wireframes to prototypes. User-centric design that converts.</p>
           </div>
         </div>
-
         <div class="bento-item bento-tall">
           <h3>Video Production</h3>
           <p>Scrolling stops here. Highly engaging edits designed for the TikTok/Reels generation.</p>
           <div style="margin-top: auto; font-size: 4rem; opacity: 0.2;"><i class="fas fa-video"></i></div>
         </div>
-
         <div class="bento-item">
           <div style="margin-bottom: 20px;"><i class="fas fa-mobile-alt"></i></div>
           <div>
@@ -137,18 +138,13 @@
             <p>Native iOS & Android apps. Performance first.</p>
           </div>
         </div>
-
-        <!-- Row 3: Growth (Large), Content -->
         <div class="bento-item bento-large">
-          <div style="margin-bottom: 20px;">
-            <i class="fas fa-rocket"></i>
-          </div>
+          <div style="margin-bottom: 20px;"><i class="fas fa-rocket"></i></div>
           <div>
             <h3>Growth & Analytics</h3>
             <p>Data-driven strategies to scale your brand. SEO, Google Ads, and performance marketing.</p>
           </div>
         </div>
-
         <div class="bento-item">
           <div style="margin-bottom: 20px;"><i class="fas fa-microphone-alt"></i></div>
           <div>
@@ -156,75 +152,66 @@
             <p>Scriptwriting, Copywriting, & Storytelling.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- PORTFOLIO - UPDATED WITH RELEVANT 4K VIDEOS -->
+  <!-- PORTFOLIO -->
   <section id="portfolio" class="section">
     <div class="container">
       <h2 class="section-title">Selected <span>Works</span></h2>
-
-      <!-- Filters -->
       <div class="filter-buttons">
         <button class="filter-btn active" data-filter="all">All Works</button>
         <button class="filter-btn" data-filter="web">Web Dev</button>
         <button class="filter-btn" data-filter="video">Video</button>
         <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="networking">Networking</button>
       </div>
-
-      <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 32px;">
-
-        <!-- Web Item - TechCorp -->
-        <div class="project-card reveal" data-category="web"
+      <div class="portfolio-bento">
+        <div class="project-card featured reveal" data-category="web"
           data-video-src="https://assets.mixkit.co/videos/preview/mixkit-typing-on-a-laptop-keyboard-close-up-1748-large.mp4">
-          <img src="img/portfolio1.png" alt="Project">
-          <div class="project-info">
-            <div>
+          <img src="img/portfolio1.png" alt="TechCorp Rebrand">
+          <div class="project-overlay">
+            <div class="project-content"><span>Web Development</span>
               <h3>TechCorp Rebrand</h3>
-              <p>Click to Watch Demo</p>
+              <div class="project-btn"><i class="fas fa-play"></i> Watch Case Study</div>
             </div>
-            <div class="project-arrow"><i class="fas fa-play"></i></div>
           </div>
         </div>
-
-        <!-- Video Item - Fashion -->
         <div class="project-card reveal" data-category="video"
           data-video-src="https://assets.mixkit.co/videos/preview/mixkit-fashion-model-posing-in-neon-light-398-large.mp4">
-          <img src="img/portfolio2.png" alt="Video Project" style="filter: brightness(0.9);">
-          <div class="project-info">
-            <div>
+          <img src="img/portfolio2.png" alt="Fashion Campaign" style="filter: brightness(0.9);">
+          <div class="project-overlay">
+            <div class="project-content"><span>Video Editing</span>
               <h3>Fashion Campaign</h3>
-              <p>Click to Watch Edit</p>
             </div>
-            <div class="project-arrow"><i class="fas fa-play"></i></div>
           </div>
         </div>
-
-        <!-- Branding Item - Coffee -->
         <div class="project-card reveal" data-category="branding"
           data-video-src="https://assets.mixkit.co/videos/preview/mixkit-barista-making-coffee-in-a-cafe-4286-large.mp4">
-          <img src="img/portfolio3.png" alt="Branding Project">
-          <div class="project-info">
-            <div>
+          <img src="img/portfolio3.png" alt="Coffee Identity">
+          <div class="project-overlay">
+            <div class="project-content"><span>Branding</span>
               <h3>Coffee Identity</h3>
-              <p>Click to See Process</p>
             </div>
-            <div class="project-arrow"><i class="fas fa-play"></i></div>
           </div>
         </div>
-
-        <!-- Extra Web Item - Fintech -->
+        <div class="project-card reveal" data-category="networking"
+          data-video-src="https://assets.mixkit.co/videos/preview/mixkit-server-room-with-many-wires-2336-large.mp4">
+          <img src="img/portfolio1.png" alt="Enterprise Network" style="filter: hue-rotate(180deg);">
+          <div class="project-overlay">
+            <div class="project-content"><span>Networking Config</span>
+              <h3>Enterprise Nodes</h3>
+            </div>
+          </div>
+        </div>
         <div class="project-card reveal" data-category="web"
           data-video-src="https://assets.mixkit.co/videos/preview/mixkit-hands-holding-a-smart-phone-in-the-street-3236-large.mp4">
-          <img src="img/portfolio1.png" alt="Project" style="filter: hue-rotate(90deg);">
-          <div class="project-info">
-            <div>
-              <h3>Fintech App</h3>
-              <p>Click to Watch Demo</p>
+          <img src="img/portfolio1.png" alt="Fintech App" style="filter: hue-rotate(90deg);">
+          <div class="project-overlay">
+            <div class="project-content"><span>Mobile App</span>
+              <h3>Fintech UI/UX</h3>
             </div>
-            <div class="project-arrow"><i class="fas fa-play"></i></div>
           </div>
         </div>
       </div>
@@ -235,647 +222,446 @@
   <section class="section">
     <div class="container">
       <h2 class="section-title">The <span>Blueprint</span></h2>
-
       <div class="process-container">
-        <!-- Vertical Line -->
         <div class="process-line"></div>
-
-        <!-- Step 1 -->
         <div class="process-step">
           <div class="step-number">01</div>
           <div class="step-content">
-            <h3>Discovery</h3>
-            <p>We dig deep into your brand's DNA to find what makes you tick.</p>
+            <h3>Hyper-Discovery & Vibe Check</h3>
+            <p>We perform an intensive deep-dive into your brand's unique DNA. This isn't just preliminary research;
+              it's a full-scale strategic audit to perfectly sync with your creative vision.</p>
           </div>
         </div>
-
-        <!-- Step 2 -->
         <div class="process-step">
           <div class="step-number">02</div>
           <div class="step-content">
-            <h3>Strategy</h3>
-            <p>Mapping out the attack plan with wireframes and moodboards.</p>
+            <h3>Strategic Architecture & Mood-Setting</h3>
+            <p>Mapping out a high-level roadmap through advanced wireframing and curated moodboards. We engineer a
+              bespoke attack plan that balances premium aesthetic perfection with a battle-tested strategy.</p>
           </div>
         </div>
-
-        <!-- Step 3 -->
         <div class="process-step">
           <div class="step-number">03</div>
           <div class="step-content">
-            <h3>Execution</h3>
-            <p>Coding, designing, and editing with pixel-perfect precision.</p>
+            <h3>The Lab: High-Performance Crafting</h3>
+            <p>This is where the magic is cooked with relentless precision. Our squad deploys a synergy of
+              high-performance coding, top-tier cinematography, and elite UI/UX design.</p>
           </div>
         </div>
-
-        <!-- Step 4 -->
         <div class="process-step">
           <div class="step-number">04</div>
           <div class="step-content">
-            <h3>Launch</h3>
-            <p>We push it live and optimize for maximum impact.</p>
+            <h3>Global Deployment & Optimization</h3>
+            <p>We initiate the mission-critical launch sequence with zero downtime. We continuously monitor analytics,
+              refine performance, and optimize for maximum engagement.</p>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- PRICING -->
+  <!-- THE HYPE STACK: PRICING -->
   <section id="pricing" class="section">
     <div class="container">
-      <h2 class="section-title">Fair <span>Game</span></h2>
+      <h2 class="section-title">The <span>Hype</span> Stack</h2>
+      <p style="text-align: center; color: #666; margin-bottom: 40px; margin-top: -20px;">Premium digital blueprints for
+        every ambition.</p>
 
-      <!-- Pricing Tabs -->
       <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 40px; flex-wrap: wrap;">
-        <button class="btn btn-outline tab-btn active" data-tab="web" style="border-radius: 12px;">Web Dev</button>
-        <button class="btn btn-outline tab-btn" data-tab="video" style="border-radius: 12px;">Video Editing</button>
-        <button class="btn btn-outline tab-btn" data-tab="brand" style="border-radius: 12px;">Branding</button>
-        <button class="btn btn-outline tab-btn" data-tab="net" style="border-radius: 12px;">Networking</button>
+        <button class="btn btn-outline tab-btn active" data-tab="web"
+          style="border-radius: 40px; padding: 12px 30px;">Web Blueprints</button>
+        <button class="btn btn-outline tab-btn" data-tab="video" style="border-radius: 40px; padding: 12px 30px;">Motion
+          & Viral</button>
+        <button class="btn btn-outline tab-btn" data-tab="brand"
+          style="border-radius: 40px; padding: 12px 30px;">Digital Identity</button>
+        <button class="btn btn-outline tab-btn" data-tab="net" style="border-radius: 40px; padding: 12px 30px;">Core
+          Infra</button>
       </div>
 
-      <!-- Web Pricing -->
+      <!-- Web Blueprints: THE ROYALE STACK -->
       <div id="web-pricing" class="pricing-content active">
-        <div class="grid"
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
-          <!-- 1. Student Pack -->
-          <div class="bento-item" style="padding: 24px;">
-            <h3>Student Pack</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 199k</div>
-            <p style="color: #666; margin-bottom: 24px;">Buat tugas kuliah atau landing page simpel.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> 1 Landing Page</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> HTML/CSS Only</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> 2 Days Delivery</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Pilih Paket</a>
+        <div class="pricing-bento">
+          <div class="hype-card reveal">
+            <div>
+              <h3>Student Pack</h3>
+              <div class="price-tag"><small>Rp</small>199k</div>
+              <p>Essential landing pages for assignments or personal links.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> 1 Landing Page</li>
+                <li><i class="fas fa-circle-notch"></i> HTML/CSS Focused</li>
+                <li><i class="fas fa-circle-notch"></i> 2 Days Delivery</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Pilih Paket</a>
           </div>
 
-          <!-- 2. Portfolio -->
-          <div class="bento-item" style="padding: 24px; border-color: var(--fg);">
-            <div
-              style="background: var(--fg); color: white; display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; margin-bottom: 12px;">
-              POPULAR</div>
-            <h3>Portfolio</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 399k</div>
-            <p style="color: #666; margin-bottom: 24px;">Web kece buat pamer karya personal.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Mobile Responsive</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> SEO Basic</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Free Hosting Setup</li>
-            </ul>
-            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Gas Portfolio</a>
+          <div class="hype-card featured reveal">
+            <div class="badge-hype">POPULAR</div>
+            <div>
+              <h3>Portfolio</h3>
+              <div class="price-tag"><small>Rp</small>399k</div>
+              <p>The definitive digital stage for your personal brand.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                <li><i class="fas fa-check"></i> SEO Basic Setup</li>
+                <li><i class="fas fa-check"></i> Free Hosting Prep</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary"
+              style="width: 100%; justify-content: center; background: #fff; color: #000; border-radius: 40px;">Gas
+              Portfolio</a>
           </div>
 
-          <!-- 3. UMKM / Simple Biz -->
-          <div class="bento-item" style="padding: 24px;">
-            <h3>UMKM Basic</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 799k</div>
-            <p style="color: #666; margin-bottom: 24px;">Profile usaha atau katalog produk simpel.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Up to 3 Pages</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> WhatsApp Link</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Free 1 Month Maint.</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Order Now</a>
+          <div class="hype-card reveal">
+            <div>
+              <h3>UMKM Basic</h3>
+              <div class="price-tag"><small>Rp</small>799k</div>
+              <p>Professional business profile for local enterprises.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> Up to 3 Pages</li>
+                <li><i class="fas fa-circle-notch"></i> WhatsApp Integrated</li>
+                <li><i class="fas fa-circle-notch"></i> 1 Month Support</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Order Now</a>
           </div>
 
-          <!-- 4. Custom Request -->
-          <div class="bento-item" style="padding: 24px; border-style: dashed;">
-            <h3>Custom</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Tanya Dulu</div>
-            <p style="color: #666; margin-bottom: 24px;">Punya ide liar? Konsultasi gratis.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> Full Stack App</li>
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> E-commerce</li>
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> Complex Features</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Chat Kami</a>
+          <div class="hype-card reveal" style="border-style: dashed;">
+            <div>
+              <h3>Custom</h3>
+              <div class="price-tag">Tanya Dulu</div>
+              <p>Bespoke platforms and complex digital ecosystems.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> Full Stack Apps</li>
+                <li><i class="fas fa-circle-notch"></i> E-commerce Ready</li>
+                <li><i class="fas fa-circle-notch"></i> Scalable Infra</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Chat Kami</a>
           </div>
         </div>
       </div>
 
-      <!-- Video Pricing -->
+      <!-- Motion & Viral -->
       <div id="video-pricing" class="pricing-content" style="display: none;">
-        <div class="grid"
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
-          <!-- 1. Tugas Video -->
-          <div class="bento-item" style="padding: 24px;">
-            <h3>Tugas Video</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 59k</div>
-            <p style="color: #666; margin-bottom: 24px;">Edit tugas sekolah/kampus biar aman.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Cut-to-cut Simple</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Backsound Free</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Standard Text</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Bantu Tugas</a>
+        <div class="pricing-bento">
+          <div class="hype-card reveal">
+            <div>
+              <h3>Tugas Video</h3>
+              <div class="price-tag"><small>Rp</small>59k</div>
+              <p>Quick edits for academic projects or simple clips.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> Cut-to-cut Simple</li>
+                <li><i class="fas fa-circle-notch"></i> Backsound Free</li>
+                <li><i class="fas fa-circle-notch"></i> Standard Text</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Bantu Tugas</a>
           </div>
 
-          <!-- 2. Content Creator -->
-          <div class="bento-item" style="padding: 24px; border-color: var(--fg);">
-            <div
-              style="background: var(--fg); color: white; display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; margin-bottom: 12px;">
-              BEST BUY</div>
-            <h3>Medsos/TikTok</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 99k</div>
-            <p style="color: #666; margin-bottom: 24px;">Konten rutin biar masuk FYP.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Dynamic Captions</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Trending Audio</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Color Grading</li>
-            </ul>
-            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Order Reels</a>
+          <div class="hype-card featured reveal">
+            <div class="badge-hype">BEST BUY</div>
+            <div>
+              <h3>Medsos / TikTok</h3>
+              <div class="price-tag"><small>Rp</small>99k</div>
+              <p>Viral-ready edits designed for maximum engagement.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-check"></i> Dynamic Captions</li>
+                <li><i class="fas fa-check"></i> Trending Audio</li>
+                <li><i class="fas fa-check"></i> Pro Color Grading</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary"
+              style="width: 100%; justify-content: center; background: #fff; color: #000; border-radius: 40px;">Order
+              Reels</a>
           </div>
 
-          <!-- 3. Cinematic / Gaming -->
-          <div class="bento-item" style="padding: 24px;">
-            <h3>Cinematic</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 249k</div>
-            <p style="color: #666; margin-bottom: 24px;">Montage gaming atau travel vlog.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Smooth Transition</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Sound Design</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> 4K Export</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Bikin Keren</a>
+          <div class="hype-card reveal">
+            <div>
+              <h3>Cinematic</h3>
+              <div class="price-tag"><small>Rp</small>249k</div>
+              <p>Premium aesthetics for high-end content creation.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> Smooth Transitions</li>
+                <li><i class="fas fa-circle-notch"></i> Sound Design</li>
+                <li><i class="fas fa-circle-notch"></i> 4K Export</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Bikin Keren</a>
           </div>
 
-          <!-- 4. Custom Request -->
-          <div class="bento-item" style="padding: 24px; border-style: dashed;">
-            <h3>Request</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Tanya Dulu</div>
-            <p style="color: #666; margin-bottom: 24px;">Video profile, dokum, atau short movie.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> Scripting</li>
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> Professional
-                Voiceover</li>
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> Complex VFX</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Chat Kami</a>
+          <div class="hype-card reveal">
+            <div>
+              <h3>Request</h3>
+              <div class="price-tag">Tanya Dulu</div>
+              <p>Custom narrative projects or commercial campaigns.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> Scripting Included</li>
+                <li><i class="fas fa-circle-notch"></i> Voiceover Support</li>
+                <li><i class="fas fa-circle-notch"></i> Complex VFX</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Chat Kami</a>
           </div>
         </div>
       </div>
 
-      <!-- Branding Pricing -->
+      <!-- Digital Identity -->
       <div id="brand-pricing" class="pricing-content" style="display: none;">
-        <div class="grid"
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
-          <!-- 1. Logo Mahasiswa -->
-          <div class="bento-item" style="padding: 24px;">
-            <h3>Logo Student</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 99k</div>
-            <p style="color: #666; margin-bottom: 24px;">Logo simpel tugas/event kampus.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> 1 Concept Basic</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> PNG/JPG High Res</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> 1x Revisi Ringan</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Order Logo</a>
+        <div class="pricing-bento">
+          <div class="hype-card reveal">
+            <div>
+              <h3>Logo Student</h3>
+              <div class="price-tag"><small>Rp</small>99k</div>
+              <p>Essential logo design for small projects or events.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> 1 Concept Basic</li>
+                <li><i class="fas fa-circle-notch"></i> High Res Exports</li>
+                <li><i class="fas fa-circle-notch"></i> 1x Revision</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Order Logo</a>
           </div>
 
-          <!-- 2. UMKM Starter -->
-          <div class="bento-item" style="padding: 24px; border-color: var(--fg);">
-            <div
-              style="background: var(--fg); color: white; display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; margin-bottom: 12px;">
-              STARTUP</div>
-            <h3>UMKM Starter</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 299k</div>
-            <p style="color: #666; margin-bottom: 24px;">Identitas profesional usaha kecil.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> 2 Concepts</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Source File (Ai/Eps)</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Free Profile Pic</li>
-            </ul>
-            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Branding Now</a>
+          <div class="hype-card featured reveal">
+            <div class="badge-hype">STARTUP</div>
+            <div>
+              <h3>UMKM Starter</h3>
+              <div class="price-tag"><small>Rp</small>299k</div>
+              <p>Complete visual foundation for growing businesses.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-check"></i> 2 Logo Concepts</li>
+                <li><i class="fas fa-check"></i> Master Source Files</li>
+                <li><i class="fas fa-check"></i> Free Profile Assets</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary"
+              style="width: 100%; justify-content: center; background: #fff; color: #000; border-radius: 40px;">Branding
+              Now</a>
           </div>
 
-          <!-- 3. Pro Identity -->
-          <div class="bento-item" style="padding: 24px;">
-            <h3>Pro Identity</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 699k</div>
-            <p style="color: #666; margin-bottom: 24px;">Full branding biar bonafide.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Master Logo System</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Brand Guideline</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Social Media Kit</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Go Pro</a>
+          <div class="hype-card reveal">
+            <div>
+              <h3>Pro Identity</h3>
+              <div class="price-tag"><small>Rp</small>699k</div>
+              <p>Elite brand ecosystem for established professionals.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> Full Logo System</li>
+                <li><i class="fas fa-circle-notch"></i> Brand Guidelines</li>
+                <li><i class="fas fa-circle-notch"></i> Social Media Kit</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Go Pro</a>
           </div>
 
-          <!-- 4. Custom Request -->
-          <div class="bento-item" style="padding: 24px; border-style: dashed;">
-            <h3>Request</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Tanya Dulu</div>
-            <p style="color: #666; margin-bottom: 24px;">Kebutuhan desain spesifik lainnya.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> Illustration</li>
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> Packaging Design</li>
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> UI/UX Full App</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Chat Kami</a>
+          <div class="hype-card reveal">
+            <div>
+              <h3>Request</h3>
+              <div class="price-tag">Tanya Dulu</div>
+              <p>Full-scale commercial identity and packaging.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> Illustrations</li>
+                <li><i class="fas fa-circle-notch"></i> Packaging Design</li>
+                <li><i class="fas fa-circle-notch"></i> UI/UX Integration</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Chat Kami</a>
           </div>
         </div>
       </div>
 
-      <!-- Networking Pricing (Premium/Mid-High) -->
+      <!-- Core Infra -->
       <div id="net-pricing" class="pricing-content" style="display: none;">
-        <div class="grid"
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
-          <!-- 1. Basic Config (Was Advanced Lab) -->
-          <div class="bento-item" style="padding: 24px;">
-            <h3>Networking Configuration</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 80k</div>
-            <p style="color: #666; margin-bottom: 24px;">Konfigurasi routing & switching standard.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Multi-Area OSPF / EIGRP</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> VLAN Trunking Protocol</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> 24/7 Config Support</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Order Lab</a>
+        <div class="pricing-bento">
+          <div class="hype-card reveal">
+            <div>
+              <h3>Net Config</h3>
+              <div class="price-tag"><small>Rp</small>80k</div>
+              <p>Essential routing and switching configurations.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> OSPF / EIGRP Setup</li>
+                <li><i class="fas fa-circle-notch"></i> VLAN Management</li>
+                <li><i class="fas fa-circle-notch"></i> 24/7 Support</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Order Lab</a>
           </div>
 
-          <!-- 2. Enterprise Design (High) -->
-          <div class="bento-item" style="padding: 24px; border-color: var(--fg);">
-            <div
-              style="background: var(--fg); color: white; display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; margin-bottom: 12px;">
-              RECOMMENDED</div>
-            <h3>Enterprise Net</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 250k</div>
-            <p style="color: #666; margin-bottom: 24px;">Simulasi infrastruktur perusahaan skala besar.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> VPN (GRE/IPSec) & ACL</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Radius/AAA Security</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Full Documentation</li>
-            </ul>
-            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Build Network</a>
+          <div class="hype-card featured reveal">
+            <div class="badge-hype">RECOMMENDED</div>
+            <div>
+              <h3>Enterprise Net</h3>
+              <div class="price-tag"><small>Rp</small>250k</div>
+              <p>Mission-critical infrastructure for scale.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-check"></i> VPN & Security</li>
+                <li><i class="fas fa-check"></i> AAA Authentication</li>
+                <li><i class="fas fa-check"></i> Full Documentation</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary"
+              style="width: 100%; justify-content: center; background: #fff; color: #000; border-radius: 40px;">Build
+              Network</a>
           </div>
 
-          <!-- 3. Tugas Menengah -->
-          <div class="bento-item" style="padding: 24px;">
-            <h3>Tugas Menengah</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Rp 500k</div>
-            <p style="color: #666; margin-bottom: 24px;">Buat tugas besar / project matkul semester 5+.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Full Topology Config</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Video Penjelasan</li>
-              <li><i class="fas fa-check" style="color: var(--fg); margin-right: 8px;"></i> Revisi Sampai Aman</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Kerjain Plis</a>
+          <div class="hype-card reveal">
+            <div>
+              <h3>Tugas Menengah</h3>
+              <div class="price-tag"><small>Rp</small>500k</div>
+              <p>Complex academic or mid-scale topologies.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> Full Topology Map</li>
+                <li><i class="fas fa-circle-notch"></i> Comprehensive Logic</li>
+                <li><i class="fas fa-circle-notch"></i> Project Hardening</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Kerjain Plis</a>
           </div>
 
-          <!-- 4. Custom Request -->
-          <div class="bento-item" style="padding: 24px; border-style: dashed;">
-            <h3>Architect</h3>
-            <div style="font-size: 2rem; font-weight: 800; margin: 16px 0;">Custom</div>
-            <p style="color: #666; margin-bottom: 24px;">Implementasi real-device Mikrotik/Cisco.</p>
-            <ul
-              style="list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> On-Site Config</li>
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> Server Rack Setup
-              </li>
-              <li><i class="fas fa-comment-dots" style="color: var(--fg); margin-right: 8px;"></i> Maintenance Contracts
-              </li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">Hubungi Kami</a>
+          <div class="hype-card reveal">
+            <div>
+              <h3>Architect</h3>
+              <div class="price-tag">Custom</div>
+              <p>Bespoke datacenter and global infrastructure.</p>
+              <ul class="pricing-list">
+                <li><i class="fas fa-circle-notch"></i> On-Site Consulting</li>
+                <li><i class="fas fa-circle-notch"></i> Rack Optimization</li>
+                <li><i class="fas fa-circle-notch"></i> Maintenance Plan</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline"
+              style="width: 100%; justify-content: center; border-radius: 40px;">Hubungi Kami</a>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- TESTIMONIALS (VIBE CHECK) -->
-  <section class="section" style="overflow: hidden;">
-    <!-- ... same ... -->
+  <!-- THE SQUAD -->
+  <section class="section" id="team">
     <div class="container">
-      <h2 class="section-title">Vibe <span>Check</span></h2>
-    </div>
-
-    <!-- Row 1: Left Scroll -->
-    <div class="testimonial-marquee-container">
-      <div class="testimonial-track">
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Editan videonya gacor parah! 🔥 Vibe-nya Gen Z banget, transisinya smooth abis."</p>
-          <strong>- Aldi, Content Creator</strong>
+      <h2 class="section-title">The <span>Squad</span></h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+        <div class="team-card"
+          style="background: #fff; border-radius: 32px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+          <img src="img/nico.jpg" alt="Nico" style="height: 350px; width: 100%; object-fit: cover;">
+          <div style="padding: 24px;">
+            <h3>Nico</h3>
+            <p style="font-weight: 700; color: var(--fg); font-size: 0.85rem; text-transform: uppercase;">Systems
+              Architect</p>
+            <p style="color: #6b7280; font-size: 0.9rem; margin: 15px 0;">Expert in infrastructure and network topology.
+            </p>
+            <a href="https://nicoyhnnssiraitt.github.io/portfolio/" target="_blank" class="btn btn-outline"
+              style="width: 100%; justify-content: center;">View Portfolio</a>
+          </div>
         </div>
-        <!-- 4 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★☆</div>
-          <p>"Hasil website oke, desainnya clean. Cuma revisinya agak ngantri kemaren. But overall good!"</p>
-          <strong>- Sarah, Photographer</strong>
+        <div class="team-card"
+          style="background: #fff; border-radius: 32px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+          <img src="img/zaky.jpg" alt="Zaky" style="height: 350px; width: 100%; object-fit: cover;">
+          <div style="padding: 24px;">
+            <h3>Zaky</h3>
+            <p style="font-weight: 700; color: var(--fg); font-size: 0.85rem; text-transform: uppercase;">Lead Creative
+            </p>
+            <p style="color: #6b7280; font-size: 0.9rem; margin: 15px 0;">Specializing in Cinematography and Front-End.
+            </p>
+            <a href="https://zeekkk246.github.io/portfolio/" target="_blank" class="btn btn-outline"
+              style="width: 100%; justify-content: center;">View Portfolio</a>
+          </div>
         </div>
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Jujurly, ini editor paling ngerti trend. Hasilnya ga cringe, malah aesthetic parah."</p>
-          <strong>- Tia, TikToker</strong>
-        </div>
-        <!-- 3 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★☆☆</div>
-          <p>"Config jarkomnya jalan, tapi dokumentasinya kurang detail dikit. Mohon diperbaiki next time."</p>
-          <strong>- Anonim, Mahasiswa IT</strong>
-        </div>
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Website-nya fast loading dan desainnya ga norak. Professional but make it cool."</p>
-          <strong>- Budi, Architect</strong>
-        </div>
-        <!-- 4 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★☆</div>
-          <p>"Video cinematic-nya dapet banget feel-nya. Agak pricey dikit tapi worth it lah."</p>
-          <strong>- Gaming Channel</strong>
-        </div>
-        <!-- 3 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★☆☆</div>
-          <p>"Logo lumayan, tapi warna awalnya ga sesuai brief. Untung adminnya sabar direvisi terus."</p>
-          <strong>- User123</strong>
-        </div>
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Kerjanya sat-set, revisi diladenin sampe puas. Recommended parah sihh."</p>
-          <strong>- Nanda, OL Shop</strong>
-        </div>
-        <!-- 3 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★☆☆</div>
-          <p>"Respon admin cepet, cuma hasil logo pertamanya kurang sreg. Untung revisinya gercep."</p>
-          <strong>- Dika, Startup</strong>
-        </div>
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Kualitas internasional harga lokal. Best investment buat branding UMKM aku."</p>
-          <strong>- Kopi Senja</strong>
-        </div>
-        <!-- 4 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★☆</div>
-          <p>"Packet Tracer kelar cepet. Mayan buat deadline mepet, meski harganya lumayan."</p>
-          <strong>- Rendi, Smstr 5</strong>
-        </div>
-        <!-- Duplicate Set for Loop -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Editan videonya gacor parah! 🔥 Vibe-nya Gen Z banget, transisinya smooth abis."</p>
-          <strong>- Aldi, Content Creator</strong>
-        </div>
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★☆</div>
-          <p>"Hasil website oke, desainnya clean. Cuma revisinya agak ngantri kemaren. But overall good!"</p>
-          <strong>- Sarah, Photographer</strong>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 2: Right Scroll -->
-    <div class="testimonial-marquee-container">
-      <div class="testimonial-track reverse">
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Visualnya eye-catching banget. Cinematic but make it trendy. Love it! 💖"</p>
-          <strong>- Jessica, Brand Owner</strong>
-        </div>
-        <!-- 4 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★☆</div>
-          <p>"Finally, nemu agency yang ngerti selera anak muda. Campuran Indo-Inggrisnya pas."</p>
-          <strong>- Startup Founder</strong>
-        </div>
-        <!-- 3 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★☆☆</div>
-          <p>"Desain sosmed bagus, tapi pengiriman file-nya agak telat 2 jam dari janji."</p>
-          <strong>- Admin Instagram</strong>
-        </div>
-        <!-- 4 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★☆</div>
-          <p>"Anjay mabar! Tugas config jarkom kelar sekejap, video penjelasannya bantu banget."</p>
-          <strong>- Gilang, Maba</strong>
-        </div>
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Portfolionya bikin klien aku percaya. Desainnya simpel tapi mahal."</p>
-          <strong>- Freelancer</strong>
-        </div>
-        <!-- 4 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★☆</div>
-          <p>"Tugas config beres. Penjelasannya enak, cuma suara di videonya agak kecil."</p>
-          <strong>- Bayu, Mahasiswa</strong>
-        </div>
-        <!-- 3 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★☆☆</div>
-          <p>"Editing oke, tapi agak lama bales chat pas weekend. Next time lebih fast respon ya."</p>
-          <strong>- Klien Cerewet</strong>
-        </div>
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Gak nyesel order di sini. Revisi cepet, hasilnya beyond expectation. Gokil!"</p>
-          <strong>- Rian, Musician</strong>
-        </div>
-        <!-- 4 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★☆</div>
-          <p>"Lumayan lah buat harga segini. Mikrotik aman, internet lancar jaya."</p>
-          <strong>- Warnet Berkah</strong>
-        </div>
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Vibe website-nya unik, beda dari yang lain. Bikin brand aku stand out."</p>
-          <strong>- Coffee Shop Owner</strong>
-        </div>
-        <!-- 5 Stars -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Logo branding-nya deep banget maknanya. Filosopis tapi tetep modern."</p>
-          <strong>- Dimas, Clothing Line</strong>
-        </div>
-        <!-- Duplicate Set -->
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★★</div>
-          <p>"Visualnya eye-catching banget. Cinematic but make it trendy. Love it! 💖"</p>
-          <strong>- Jessica, Brand Owner</strong>
-        </div>
-        <div class="testimonial-card-new">
-          <div style="color:#f59e0b; margin-bottom:10px;">★★★★☆</div>
-          <p>"Finally, nemu agency yang ngerti selera anak muda. Campuran Indo-Inggrisnya pas."</p>
-          <strong>- Startup Founder</strong>
+        <div class="team-card"
+          style="background: #fff; border-radius: 32px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+          <img src="img/dwiky.jpg" alt="Dwiky" style="height: 350px; width: 100%; object-fit: cover;">
+          <div style="padding: 24px;">
+            <h3>Dwiky</h3>
+            <p style="font-weight: 700; color: var(--fg); font-size: 0.85rem; text-transform: uppercase;">Full-Stack
+              Engineer</p>
+            <p style="color: #6b7280; font-size: 0.9rem; margin: 15px 0;">Architecting scalable web applications.</p>
+            <a href="https://dwiky-candra.vercel.app/" target="_blank" class="btn btn-outline"
+              style="width: 100%; justify-content: center;">View Portfolio</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <!-- ... same ... -->
-  <section class="section" style="padding-top:0;">
-    <div class="container">
-      <h2 class="section-title">FAQs</h2>
-      <div class="faq-grid">
-        <details class="faq-item">
-          <summary>How much does a website cost? <span class="faq-icon"><i class="fas fa-plus"></i></span></summary>
-          <p style="margin-top:10px; color:#666;">Our packages start from Rp 59k for basic tasks up to Custom pricing
-            for complex projects. We tailor everything to your specific budget, especially for students!</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do you offer source files? <span class="faq-icon"><i class="fas fa-plus"></i></span></summary>
-          <p style="margin-top:10px; color:#666;">Yes, Pro and Business plans include all editable source files (Figma,
-            After Effects, Illustrator) so you retain full control.</p>
-        </details>
-        <details class="faq-item">
-          <summary>What is the turnaround time? <span class="faq-icon"><i class="fas fa-plus"></i></span></summary>
-          <p style="margin-top:10px; color:#666;">Speed is our forte. Usually 1-2 weeks depending on complexity. Basic
-            landing pages can be done in 3 days.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Can you handle rush orders? <span class="faq-icon"><i class="fas fa-plus"></i></span></summary>
-          <p style="margin-top:10px; color:#666;">Absolutely. We offer an 'Express Lane' service for an additional fee
-            if you need deliverables within 24-48 hours.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do you provide hosting? <span class="faq-icon"><i class="fas fa-plus"></i></span></summary>
-          <p style="margin-top:10px; color:#666;">We can set up hosting for you on Vercel or Netlify, giving you a fast,
-            secure, and free start for most static sites.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <!-- ... same ... -->
+  <!-- COMMUNITY & CONTACT -->
   <section id="contact" class="section">
-    <div class="container" style="text-align: center;">
-      <div class="contact-container">
-        <h2 class="section-title" style="margin-bottom: 30px;">Let's <span>Cook</span></h2>
-        <p style="margin-bottom: 24px; color: #666;">Tell us exactly what you need. We read every email.</p>
-
-        <!-- WhatsApp Button -->
-        <a href="https://wa.me/6289613187896" target="_blank" class="btn btn-whatsapp"
-          style="margin-bottom: 32px; display: inline-flex; align-items: center; gap: 10px;">
-          <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Chat on WhatsApp (Fast Response)
-        </a>
-
-        <div
-          style="margin-bottom: 32px; display: flex; align-items: center; gap: 16px; color: #9ca3af; font-size: 0.9rem; font-weight: 600;">
-          <span style="height: 1px; background: #e5e7eb; flex: 1;"></span> OR SEND EMAIL <span
-            style="height: 1px; background: #e5e7eb; flex: 1;"></span>
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 40px;">
+        <div class="contact-container" style="height: fit-content;">
+          <h2 class="section-title" style="text-align: left;">Let's <span>Cook</span></h2>
+          <form action="https://formsubmit.co/purwanazaky1369@gmail.com" method="POST" style="margin-top: 30px;">
+            <input type="text" name="name" class="form-input" placeholder="Name" required
+              style="width: 100%; margin-bottom: 15px;">
+            <input type="email" name="email" class="form-input" placeholder="Email" required
+              style="width: 100%; margin-bottom: 15px;">
+            <textarea name="message" class="form-textarea" rows="5" placeholder="Project Details" required
+              style="width: 100%; margin-bottom: 15px;"></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send
+              Request</button>
+          </form>
         </div>
-
-        <form action="https://formsubmit.co/purwanazaky1369@gmail.com" method="POST" class="form-grid"
-          style="text-align: left;">
-          <!-- Config for Email Subject & Display -->
-          <input type="hidden" name="_subject" value="🚀 New Project Request from Z Studio">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-
-          <div class="form-group">
-            <label style="display:block; margin-bottom:8px; font-weight:600;">Full Name</label>
-            <input type="text" name="name" class="form-input" placeholder="John Doe" required>
+        <div>
+          <h2 class="section-title" style="text-align: left;">Community <span>Hub</span></h2>
+          <div id="comment-container" style="display: grid; gap: 20px; max-height: 500px; overflow-y: auto;">
+            <div class="comment-card" style="background: #fff; padding: 20px; border-radius: 20px;">
+              <strong>Admin</strong>
+              <p>Welcome to Z Studio!</p>
+            </div>
           </div>
-          <div class="form-group">
-            <label style="display:block; margin-bottom:8px; font-weight:600;">Email Address</label>
-            <input type="email" name="email" class="form-input" placeholder="john@company.com" required>
-          </div>
-
-          <div class="form-group">
-            <label style="display:block; margin-bottom:8px; font-weight:600;">Service Needed</label>
-            <select name="service" class="form-select">
-              <optgroup label="Web Development">
-                <option value="Web Student - Rp 199k">Student Pack (Rp 199k)</option>
-                <option value="Web Portfolio - Rp 399k">Portfolio Website (Rp 399k)</option>
-                <option value="Web UMKM - Rp 799k">UMKM Basic (Rp 799k)</option>
-                <option value="Web Custom">Custom Web Request</option>
-              </optgroup>
-              <optgroup label="Video Editing">
-                <option value="Video Tugas - Rp 59k">Tugas Video (Rp 59k)</option>
-                <option value="Video TikTok - Rp 99k">Medsos / TikTok (Rp 99k)</option>
-                <option value="Video Cinematic - Rp 249k">Cinematic / Gaming (Rp 249k)</option>
-                <option value="Video Custom">Custom Video Request</option>
-              </optgroup>
-              <optgroup label="Branding & Design">
-                <option value="Logo Student - Rp 99k">Logo Student (Rp 99k)</option>
-                <option value="UMKM Starter - Rp 299k">UMKM Starter (Rp 299k)</option>
-                <option value="Pro Identity - Rp 699k">Pro Identity (Rp 699k)</option>
-                <option value="Design Custom">Custom Design Request</option>
-              </optgroup>
-              <optgroup label="Networking (Premium)">
-                <option value="Net Config - Rp 80k">Networking Configuration (Rp 80k)</option>
-                <option value="Net Enterprise - Rp 250k">Enterprise Design (Rp 250k)</option>
-                <option value="Net Expert - Rp 500k">Tugas Menengah (Rp 500k)</option>
-                <option value="Net Architect">Custom Architecture</option>
-              </optgroup>
-              <option value="Other">Other / General Inquiry</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label style="display:block; margin-bottom:8px; font-weight:600;">Estimated Budget</label>
-            <select name="budget" class="form-select">
-              <option value="Sesuai Paket">Sesuai Harga Paket</option>
-              <option value="Under 500k">Student Budget (< 500k)</option>
-              <option value="500k - 1.5jt">Rp 500k - 1.5jt</option>
-              <option value="1.5jt+">Rp 1.5jt+</option>
-              <option value="Custom">Custom / Nego</option>
-            </select>
-          </div>
-
-          <div class="form-full">
-            <label style="display:block; margin-bottom:8px; font-weight:600;">Project Details</label>
-            <textarea name="message" class="form-textarea" rows="5"
-              placeholder="Tell us about your project goals, references, or ideas..." required></textarea>
-          </div>
-
-          <div class="form-full">
-            <button type="submit" class="btn btn-primary"
-              style="width: 100%; justify-content: center; margin-top:16px;">Send Detailed Request</button>
-          </div>
-        </form>
+          <form id="comment-form" onsubmit="handleCommentSubmit(event)" style="margin-top: 20px;">
+            <input type="text" id="comment-name" class="form-input" placeholder="Name" required
+              style="width: 100%; margin-bottom: 10px;">
+            <textarea id="comment-text" class="form-textarea" rows="3" placeholder="Message" required
+              style="width: 100%; margin-bottom: 10px;"></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Post
+              Comment</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-big">Z.STUDIO</div>
-      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
         <div>© 2025 Z Studio. Jakarta.</div>
-        <div style="display: flex; gap: 20px;">
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-          <a href="#">LinkedIn</a>
-        </div>
+        <div style="display: flex; gap: 20px;"><a href="#">Instagram</a><a href="#">LinkedIn</a></div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- AI CHAT -->
+  <div class="meta-ai-fab" onclick="toggleAIChat()">
+    <span style="font-family: 'Playfair Display', serif; font-weight: 900; font-size: 32px; color: #333;">Z</span>
+  </div>
+  <div class="ai-chat-window" id="ai-chat-window">
+    <div class="ai-header">
+      <h4>Z Studio AI</h4><button onclick="toggleAIChat()" class="close-ai">&times;</button>
+    </div>
+    <div class="ai-body" id="ai-messages">
+      <div class="ai-message bot">Halo! Ada yang bisa dibantu?</div>
+    </div>
+    <div class="ai-footer">
+      <input type="text" id="ai-input" placeholder="Ask me anything..." onkeypress="handleEnter(event)">
+      <button onclick="sendAI()" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js?v=1.1"></script>
 </body>
 
 </html>
